@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Javascript Quiz</title>
+    <link rel="shortcut icon" href="js.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="quiz">
+            <div class="heading">
+                <p class="title">Javascript Fundamentals</p>
+                <p class="subtitle">Baisc Quiz To Test Your Javascript Knowledge! </p>
+            </div>
+            <div class="result hide">
+                <p>You scored 5/5.</p>
+                <p class="reload">
+                    <button onclick="document.location.reload(true)">Try Again?</button>
+                </p>
+            </div>
+            <form class="quiz-form">
+                <div class="question">
+                    <p>1. Inside which HTML element do we put the Javascript?</p>
+                    <div class="option">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label for="">JS</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="q1" value="B" >
+                        <label for="">Javascript</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="q1" value="C" >
+                        <label for="">Scripting</label>
+                    </div>
+                    
+                    <div class="option">
+                        <input type="radio" name="q1" value="D">
+                        <label for="">Script</label>
+                    </div>
+
+                </div>
+                <div class="question">
+                    <p>2. Where is the correct place to insert a Javascript File?</p>
+
+                    <div class="option">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label for="">Inside Head Section</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="q2" value="B" >
+                        <label for="">At the end of the body section</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="q2" value="C" >
+                        <label for="">After the body section</label>
+                    </div>
+                    
+                    <div class="option">
+                        <input type="radio" name="q2" value="D" >
+                        <label for="">None</label>
+                    </div>
+                    
+                </div>
+                <div class="question">
+                    <p>3. What is the correct syntax for referring to an external script called "index.js"?</p>
+
+                    <div class="option">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label for="">&ltscript src="index.js"&gt</script></label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="q3" value="B" >
+                        <label for="">&ltscript name="index.js"&gt</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="q3" value="C" >
+                        <label for="">&ltscript href="index.js"&gt</label>
+                    </div>
+                    
+                    <div class="option">
+                        <input type="radio" name="q3" value="D" >
+                        <label for="">All of above</label>
+                    </div>
+                    
+                </div>
+                <div class="question">
+                    <p>4. How do you write "Hello World" in an alert box?</p>
+                    <div class="option">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label for="">pop("Hello World");</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="q4" value="B" >
+                        <label for="">alert("Hello World");</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="q4" value="C" >
+                        <label for="">popUp("Hello World");</label>
+                    </div>
+                    
+                    <div class="option">
+                        <input type="radio" name="q4" value="D" >
+                        <label for="">alertUp("Hello World");</label>
+                    </div>
+ 
+                </div>
+                <div class="question">
+                    <p>5. Which operator is used to assign a value to a variable? </p>
+
+                    <div class="option">
+                        <input type="radio" name="q5" value="A" checked>
+                        <label for="">-</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="q5" value="B" >
+                        <label for="">+</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="q5" value="C" >
+                        <label for="">*</label>
+                    </div>
+                    
+                    <div class="option">
+                        <input type="radio" name="q5" value="D" >
+                        <label for="">=</label>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
