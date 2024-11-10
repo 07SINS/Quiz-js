@@ -1,3 +1,5 @@
+const jsConfetti = new JSConfetti();
+
 const correctAnswers = ["D", "B", "A", "B", "D"];
 const form = document.querySelector(".quiz-form");
 const result = document.querySelector(".result");
@@ -19,4 +21,15 @@ form.addEventListener("submit", (event) => {
     scrollTo(0,0);
     result.querySelector("p").textContent = `You scored: ${score}/5!`;
     result.classList.remove("hide");
+
+    if (score === 5) {
+        jsConfetti.addConfetti({
+            particleCount: 200,
+            spread: 70,
+            origin: {
+                x: 0.5,
+                y: 0.5, 
+            }
+        });
+    }
 });
